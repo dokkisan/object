@@ -1,6 +1,10 @@
 package chap01.example.step02;
 
 public class Bag {
+    private Long amount;
+    private Invitation invitation;
+    private Ticket ticket;
+
     public Bag(Long amount) {
         this(null, amount);
     }
@@ -9,10 +13,6 @@ public class Bag {
         this.invitation = invitation;
         this.amount = amount;
     }
-
-    private Long amount;
-    private Invitation invitation;
-    private Ticket ticket;
 
     public boolean hasInvitation() {
         return invitation != null;
